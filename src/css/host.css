@@ -1,0 +1,39 @@
+:host {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  font-size: initial;
+  box-sizing: border-box;
+}
+:host([size="xs"]) {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+:host([size="sm"]) {
+  width: 1.55rem;
+  height: 1.55rem;
+}
+:host([size="md"]) {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+:host([size="lg"]) {
+  width: 3rem;
+  height: 3rem;
+}
+:host(
+    [size]:not([size=""]):not([size="xs"]):not([size="sm"]):not(
+        [size="md"]
+      ):not([size="lg"])
+  ) {
+  width: auto;
+  height: auto;
+}
+#kdIconHolder,
+svg {
+  width: 100%;
+  height: 100%;
+}
+#kdIconHolder {
+  box-sizing: border-box;
+}

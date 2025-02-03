@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KidoIcons</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        min-height: 100vh;
+        background: #f2f2f2;
+      }
+      h1 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        text-align: center;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+      }
+      .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+      }
+      .container div {
+        width: 150px;
+        height: 150px;
+        background: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+      }
+      div svg {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 10px;
+      }
+      div .name {
+        font-size: 14px;
+        text-wrap: nowrap;
+      }
+      div span:not(.name) {
+        font-size: 15px;
+        margin-top: 10px;
+      }
+      div span b {
+        color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Kido Icons List ( <span class="count"></span> )</h1>
+    <div class="container"></div>
+
+    <script>
+      let count = 0;
+      let container = document.querySelector(".container");
+      fetch("../kidoIconsData.json")
+        .then((response) => response.json())
+        .then((data) => {
+          for (let key in data) {
+            let card = document.createElement("div");
+            card.className = key;
+            card.innerHTML = `${data[key].content}
+            <span class='name'>${key
+              .replace("kd-", "")
+              .replace("kdf-", "")
+              .replace("kdl-", "")}</span>
+            <span><b>Unicode</b> : ${data[key].uniCode}</span>  `;
+            container.appendChild(card);
+            count++;
+          }
+          document.querySelector(".count").textContent = count;
+        })
+        .catch((error) => {
+          console.log("Error reading the file", error);
+        });
+    </script>
+  </body>
+</html>
