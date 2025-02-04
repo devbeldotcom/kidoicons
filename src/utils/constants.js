@@ -8,7 +8,7 @@ const Constants = {
   TAG_FILLED_PREFIX: "kdf-",
   TAG_LOGO_PREFIX: "kdl-",
   TAG_REGX: /\bkd-|\bkdf-|\bkdl-/,
-  BASE_URL: "../svg",
+  BASE_URL: "https://unpkg.com/kidoicons@1.0.2/svg",
 };
 
 export default Constants;

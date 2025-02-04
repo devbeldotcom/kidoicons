@@ -1,4 +1,4 @@
-# Kido Icons (1.0.1)
+# Kido Icons (1.0.2)
 
 ---
 
@@ -42,22 +42,22 @@ import { KidoIcon } from 'kidoicons'
    <head>
      <link
        rel="stylesheet"
-       href="https://cdn.jsdelivr.net/npm/kidoicons@latest/dist/css/kidoicons.min.css"
+       href="https://cdn.jsdelivr.net/npm/kidoicons@1.0.2/dist/css/kidoicons.min.css"
      />
      <!--or-->
      <link
        rel="stylesheet"
-       href="https://cdn.jsdelivr.net/npm/kidoicons@latest/dist/css/kidoicons.css"
+       href="https://cdn.jsdelivr.net/npm/kidoicons@1.0.2/dist/css/kidoicons.css"
      />
      <!--or-->
      <link
        rel="stylesheet"
-       href="https://unpkg.com/kidoicons@latest/dist/css/kidoicons.min.css"
+       href="https://unpkg.com/kidoicons@1.0.2/dist/css/kidoicons.min.css"
      />
      <!--or-->
      <link
        rel="stylesheet"
-       href="https://unpkg.com/kidoicons@latest/dist/css/kidoicons.css"
+       href="https://unpkg.com/kidoicons@1.0.2/dist/css/kidoicons.css"
      />
    </head>
    ```
@@ -70,18 +70,18 @@ import { KidoIcon } from 'kidoicons'
    <i class="kdl-github"></i>
    ```
 
-#### Using Custom Web Component(Works only KidiIcons Version:1.0.1 and above)
+#### Using Custom Web Component(Works only KidiIcons V:1.0.1 and above)
 
 1.  Add script tag of kidoIcons JS file into your page
 
     ```html
-    <script src="https://cdn.jsdelivr.net/npm/kidoicons@latest/dist/js/kidoicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kidoicons@1.0.2/dist/js/kidoicons.js"></script>
     <!--or-->
-    <script src="https://cdn.jsdelivr.net/npm/kidoicons@latest/dist/js/kidoicons.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kidoicons@1.0.2/dist/js/kidoicons.min.js"></script>
     <!--or-->
-    <script src="https://unpkg.com/kidoicons@latest/dist/js/kidoicons.js"></script>
+    <script src="https://unpkg.com/kidoicons@1.0.2/dist/js/kidoicons.js"></script>
     <!--or-->
-    <script src="https://unpkg.com/kidoicons@latest/dist/js/kidoicons.min.js"></script>
+    <script src="https://unpkg.com/kidoicons@1.0.2/dist/js/kidoicons.min.js"></script>
     ```
 
 2.  Add icons by using `kido-icon` tag and pass icon name as `name` attribute as shown below
