@@ -1,4 +1,4 @@
-# Kido Icons
+# Kido Icons (1.0.1)
 
 ---
 
@@ -70,7 +70,7 @@ import { KidoIcon } from 'kidoicons'
    <i class="kdl-github"></i>
    ```
 
-#### Using Custom Web Component
+#### Using Custom Web Component(Works only KidiIcons Version:1.0.1 and above)
 
 1.  Add script tag of kidoIcons JS file into your page
 
